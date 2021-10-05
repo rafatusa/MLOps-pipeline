@@ -1,10 +1,4 @@
 steps:
-- name: 'gcr.io/cloud-builders/p2p-cloudbuild' 
-  entrypoint: '/bin/bash'
-  args:
-    - '-c'
-    - |
-      virtualenv /workspace/venv
-      source /workspace/venv/bin/activate
-      pip install -V -r requirements.txt
-      python -c 'from main import foo; print (foo())'
+ - name: python
+    entrypoint: pip
+    args: ["install", "-r", "requirements.txt", "--user"]
