@@ -3,5 +3,6 @@ streamlit
 pillow
 numpy
 requests
+lark 
 
 #Run this file with - pip3 install -r requirements.txt
