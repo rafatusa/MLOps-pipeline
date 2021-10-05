@@ -1,9 +1,4 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/imgwebapp:v1', '.']
-  timeout: 180s
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/imgwebapp:v1']
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: "bash"
   args:
@@ -11,9 +6,3 @@ steps:
   - |
     echo "Docker Container Built"
     pip install lark --upgrade/
-- name: "gcr.io/cloud-builders/gke-deploy"
-  args:
-  - run
-  - --filename=k8s/
-  - --location=us-west1
-  - --cluster=project-kube
