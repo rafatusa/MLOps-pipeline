@@ -1,3 +1,4 @@
-lark 
+lark
+pytest==6.2.1
 
 #Run this file with - pip3 install -r requirements.txt
