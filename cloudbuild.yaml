@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/$PROJECT_ID/p2p-cloudbuild' 
+- name: 'gcr.io/cloud-builders/p2p-cloudbuild' 
   entrypoint: '/bin/bash'
   args:
     - '-c'
