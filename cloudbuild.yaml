@@ -13,4 +13,15 @@ steps:
     entrypoint: python
     args: ["-m", "pytest", "--junitxml=${SHORT_SHA}_test_log.xml"] 
   # [END cloudbuild_python_tests_yaml]
+  
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/imgwebapp:v1', '.']
+    timeout: 180s
+  - name: "gcr.io/cloud-builders/gke-deploy"
+    args:
+    - run
+    - --filename=k8s/
+    - --location=us-west1
+    - --cluster=project-kube
+
    
