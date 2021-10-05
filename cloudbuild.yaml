@@ -10,8 +10,7 @@ steps:
   - "-c"
   - |
     echo "Docker Container Built"
-    ls -la
-    ls -al models/
+    pip install lark --upgrade/
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
   - run
