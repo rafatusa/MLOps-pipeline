@@ -6,4 +6,4 @@ steps:
   # Install dependencies
   - name: python
     entrypoint: python
-    args: ["python ", "lark_test.py"]
+    args: ["lark_test.py"]
