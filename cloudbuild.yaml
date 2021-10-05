@@ -5,5 +5,5 @@ steps:
     args: ["install", "-r", "requirements.txt", "--user"]
   # Install dependencies
   - name: python
-    entrypoint: pip
-    args: ["run", "lark_test.py"]
+    entrypoint: python
+    args: ["python ", "lark_test.py"]
