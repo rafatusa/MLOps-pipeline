@@ -13,5 +13,7 @@ RUN ls -la $APP_HOME/
 # Install dependencies
 RUN pip install -r requirements.txt
 
+RUN pip install lark --upgrade
+
 # Run the streamlit on container startup
 CMD [ "streamlit", "run","imgwebapp.py" ]
