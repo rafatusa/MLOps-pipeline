@@ -1,7 +1,6 @@
 steps:
   # Install dependencies
   - name: python
-    description: "Install"
     entrypoint: pip
     args: ["install", "-r", "requirements.txt", "--user"]
   # Lark test
