@@ -3,6 +3,6 @@ pytest==6.2.1
 Flask==1.1.2
 numpy
 pandas
---upgrade google-cloud-bigquery
+google-cloud-bigquery
 
 #Run this file with - pip3 install -r requirements.txt
