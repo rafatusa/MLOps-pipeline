@@ -1,10 +1,10 @@
 steps:
   # Install dependencies
-  - name: python
+  - name: ecoron/python36-sklearn
     entrypoint: pip
     args: ["install", "-r", "requirements.txt", "--user"]
   # Lark test
-  - name: python
+  - name: ecoron/python36-sklearn
     entrypoint: python
     args: ["lark_test.py"]
   # [START cloudbuild_python_tests_yaml]
@@ -14,7 +14,7 @@ steps:
   #   args: ["-m", "pytest", "--junitxml=${SHORT_SHA}_test_log.xml"] 
   # # [END cloudbuild_python_tests_yaml]
 
-  - name: python
+  - name: ecoron/python36-sklearn
     entrypoint: python
     args: ["temp.py"]
   # [END cloudbuild_python_tests_yaml]
