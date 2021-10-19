@@ -8,11 +8,11 @@ steps:
     entrypoint: python
     args: ["lark_test.py"]
   # [START cloudbuild_python_tests_yaml]
-  # Run unit tests
-  - name: python
-    entrypoint: python
-    args: ["-m", "pytest", "--junitxml=${SHORT_SHA}_test_log.xml"] 
-  # [END cloudbuild_python_tests_yaml]
+  # # Run unit tests
+  # - name: python
+  #   entrypoint: python
+  #   args: ["-m", "pytest", "--junitxml=${SHORT_SHA}_test_log.xml"] 
+  # # [END cloudbuild_python_tests_yaml]
 
   - name: python
     entrypoint: python
