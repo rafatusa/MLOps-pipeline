@@ -1,10 +1,10 @@
 steps:
   # Install dependencies
-  - name: smizy/scikit-learn
+  - name: continuumio/anaconda3
     entrypoint: pip
     args: ["install", "-r", "requirements.txt", "--user"]
   # Lark test
-  - name: smizy/scikit-learn
+  - name: continuumio/anaconda3
     entrypoint: python
     args: ["lark_test.py"]
   # [START cloudbuild_python_tests_yaml]
@@ -14,7 +14,7 @@ steps:
   #   args: ["-m", "pytest", "--junitxml=${SHORT_SHA}_test_log.xml"] 
   # # [END cloudbuild_python_tests_yaml]
 
-  - name: smizy/scikit-learn
+  - name: continuumio/anaconda3
     entrypoint: python
     args: ["temp.py"]
   # [END cloudbuild_python_tests_yaml]
