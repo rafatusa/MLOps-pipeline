@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 RUN pip install lark --upgrade
 
 # Run the streamlit on container startup
-CMD python temp.py
+CMD [ "streamlit", "run","temp.py" ]
