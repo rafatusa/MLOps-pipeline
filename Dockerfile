@@ -18,7 +18,7 @@
 # # Run the streamlit on container startup
 # CMD [ "streamlit", "run","temp.py" ]
 
-FROM continuumio/anaconda3:4.4.0
+FROM continuumio/anaconda3
 COPY . /usr/app/
 WORKDIR /usr/app/
 RUN pip install -r requirements.txt
