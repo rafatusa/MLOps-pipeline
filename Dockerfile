@@ -1,7 +1,7 @@
 # lightweight python
-FROM python:3.7-slim
+FROM continuumio/anaconda3
 
-RUN apt-get update
+# RUN apt-get update
 
 # Copy local code to the container image.
 ENV APP_HOME /app
@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 RUN pip install lark --upgrade
 
 # Run the streamlit on container startup
-CMD [ "streamlit", "run","imgwebapp.py" ]
+CMD python temp.py
