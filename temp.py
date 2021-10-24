@@ -19,7 +19,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
 client = bigquery.Client()
 
-QUERY = ('SELECT YearsExperience,Salary FROM `melodic-bolt-327318.mldata1.test` LIMIT 1000')
+QUERY = ('SELECT YearsExperience,Salary FROM `hip-plexus-238820.mldata1.input_data` LIMIT 1000')
 query_job = client.query(QUERY) # API request
 #query_job.to_csv("id.CSV",index= False)
 rows = query_job.result()  # Waits for query to finish
@@ -93,7 +93,7 @@ for value in y_pred:
 
 #Upload data to bigquery
 
-table_id = 'melodic-bolt-327318.mldata1.result'
+table_id = 'hip-plexus-238820.mldata1.prediction_data'
 
 for value in y_pred:
     rows_to_insert = [
