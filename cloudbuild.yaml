@@ -51,6 +51,6 @@ steps:
   - run
   - --filename=k8s/
   - --location=us-west1
-  - --cluster=project-kube
+  - --cluster=ml-pipeline
 
    
