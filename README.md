@@ -1,6 +1,10 @@
-# Machine Learning Web APP - Computer Vision Model
-This repository contains image classifier web app built on streamlit and deployed on GCP using CloudBuild
+How to Run
+Connect Git repository in GOOGLE CLOUD BUILD TIGGER and set a TIGGER
+Enable Apis in Cloud build 
+Create a service user and give access as a Bigquery user
+Create a database and connect with the cloud build project
+Upload test data in BigQuery
+Create a table named result for store result data
+Tigger the CI/CD cloud build for start the process
 
-Start with configuring "GitHub cloud build app" for required repo - https://github.com/marketplace/google-cloud-build
 
-#Updated for Deployment - 5
