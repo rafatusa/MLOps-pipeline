@@ -22,4 +22,5 @@ FROM continuumio/anaconda3
 COPY . /usr/app/
 WORKDIR /usr/app/
 RUN pip install -r requirements.txt
-RUN python temp.py
+CMD [ "streamlit", "run","temp.py" ]
+# RUN python temp.py
