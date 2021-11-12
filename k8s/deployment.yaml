@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: cv-app
-        image: gcr.io/sodium-reporter-331815/imgwebapp:v5
+        image: gcr.io/sodium-reporter-331815/imgwebapp:v1
         ports:
         - containerPort: 8501
