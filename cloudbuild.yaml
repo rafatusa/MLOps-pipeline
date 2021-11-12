@@ -5,7 +5,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/imgwebapp:v5']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['run', 'gcr.io/$PROJECT_ID/imgwebapp:v1']
+  args: ['run', 'gcr.io/$PROJECT_ID/imgwebapp:v5']
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
   - run
