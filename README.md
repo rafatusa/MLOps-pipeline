@@ -6,5 +6,6 @@
 # Upload test data in BigQuery
 # Create a table named result for store result data
 # Tigger the CI/CD cloud build for start the process
-# deploy 10
+# deploy 11
+
 
