@@ -1,10 +1,14 @@
-lark
-pytest==6.2.1
-Flask==1.1.2
+tensorflow
+streamlit
+pillow
 numpy
+requests
 pandas
 google-cloud-bigquery
-# scikit-learn
-#sklearn
+runipy
+
+#for schedule job 
+python-crontab
+schedule
 
 #Run this file with - pip3 install -r requirements.txt

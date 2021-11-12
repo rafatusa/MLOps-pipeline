@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mlops
+  name: mlclass
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: mlopsdemo
+      app: imageclassifier
   template:
     metadata:
       labels:
-        app: mlopsdemo
+        app: imageclassifier
     spec:
       containers:
       - name: cv-app
-        image: httpd
+        image: gcr.io/sodium-reporter-331815/imgwebapp:v5
         ports:
         - containerPort: 8501
